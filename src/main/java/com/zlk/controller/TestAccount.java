@@ -1,6 +1,5 @@
 package com.zlk.controller;
 
-
 import com.zlk.bean.Account;
 import com.zlk.dao.AccountDao;
 import com.zlk.service.AccountService;
@@ -46,11 +45,8 @@ public class TestAccount {
 //    private AccountDao Dao = null;
 //    @Before
 //    public void setUp() throws Exception {
-//
 //        ctx = new ClassPathXmlApplicationContext("classpath:configs/config-spring.xml");
-//
 //        Dao = (AccountDao) ctx.getBean("AccountDao");
-//
 //    }
     //配置主测试方法
     @Test
