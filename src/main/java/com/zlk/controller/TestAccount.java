@@ -35,9 +35,7 @@ public class TestAccount {
     // 使用Autowired注解，进行依赖注入（反转控制）
     @Autowired
     ApplicationContext ctx;
-    @Autowired
     AccountDao Dao;
-    @Autowired
     AccountService service;
 
 //    //方法2：配置Before注解下的方法，每次Test前优先运行Before注解下的方法。
