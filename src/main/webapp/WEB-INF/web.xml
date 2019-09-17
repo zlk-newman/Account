@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+    <!-- 配置框架启动需加载的相关参数 -->
+    <context-param>
+        <!-- 该参数名是固定的，用在spring监听器中 -->
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:configs/config-spring.xml</param-value>
+    </context-param>
+    <!-- 配置 Character Encoding filter -->
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <!-- 配置spring的监听器：使spring一直监听web容器，对web容器中的所有的实体对象进行管理， 等价于加载ApplicationContext
+          对象；也就是说spring通过由web服务器加载ContextLoaderListener监听器来启动spring框架 -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <!-- 防止Spring内存溢出监听器(可选) -->
+    <listener>
+        <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+    </listener>
+</web-app>
