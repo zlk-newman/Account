@@ -77,10 +77,10 @@ public class TestAccount {
         Scanner sc = new Scanner(System.in);
         System.out.println("是否选择转账（y/n）：");
         a= sc.nextLine();
-        if (a.equals("y")){
+        if ("y".equals(a)){
             System.out.println("下面为您转账:");
             OutAccount();
-        }else if (a.equals("n")){
+        }else if ("n".equals(a)){
             System.out.println("很高兴为您服务，再见！");
         }else {
             System.out.println("您的输入有误，请重新输入！");
