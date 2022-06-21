@@ -22,7 +22,7 @@
       <!--junit版本号-->
       <junit.version>4.12</junit.version>
       <!-- Mysql数据库驱动 -->
-      <mysql-connector-jdbc.version>8.0.17</mysql-connector-jdbc.version>
+      <mysql-connector-jdbc.version>8.0.28</mysql-connector-jdbc.version>
       <!-- druid 版本号 -->
       <druid.version>1.1.20</druid.version>
 
